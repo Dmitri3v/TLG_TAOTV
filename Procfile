@@ -1,1 +1,1 @@
-web: python /.bot/py_bot.py
+ python py_bot.py
