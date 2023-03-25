@@ -13,7 +13,7 @@ def bot_msg_txt(message):
     if message.text.startswith("/"):
         bot.send_message(message.chat.id, "Command not found")
     else:
-        bot.send_message(message.chat.id, "Soy un el bot de TAO TV!")
+        bot.send_message(message.chat.id, "Soy el bot de TAO TV!")
 
 
 if __name__ == '__main__':
