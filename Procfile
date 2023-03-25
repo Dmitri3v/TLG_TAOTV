@@ -1,1 +1,1 @@
- python py_bot.py
+web: python py_bot.py
