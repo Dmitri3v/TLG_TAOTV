@@ -1,4 +1,4 @@
-from /bot/tel_config import *
+from tel_config import *
 import telebot
 
 bot = telebot.TeleBot(tel_thonken)
