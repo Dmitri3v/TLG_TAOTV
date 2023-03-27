@@ -4,7 +4,7 @@ import telegram
 
 bot = telebot.TeleBot(tel_thonken)
 
-rd_url = "https://mediacp15.rootservers.co:8068/stream.mp3"
+rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
 
 
     ### Este apartade es para definir los comandos principales
