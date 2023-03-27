@@ -3,7 +3,7 @@ import telebot
 
 bot = telebot.TeleBot(tel_thonken)
 
-@bot.message_handler(commands=["start"])
+@bot.message_handler(commands=["start, iniciar"])
 def cmd_start(message):
     bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
 
