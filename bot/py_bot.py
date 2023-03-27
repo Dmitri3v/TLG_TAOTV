@@ -12,7 +12,7 @@ bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
-photo_start = open("VM Kelium.jpg", "rb")
+photo_start = "https://www.taoistas.org/wp-content/uploads/2021/01/100.jpg"
 
 ## Start Edited
 
