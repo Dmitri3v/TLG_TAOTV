@@ -31,6 +31,10 @@ def bot_msg_txt(message):
         bot.send_message(message.chat.id, "Soy el bot de TAO TV!")
 
 
+while True:
+    bot.send_audio(chat_id='1844973844', audio=rd_url)
+
+
     ### Este es un bucle para que el bot no pare de correr
 if __name__ == '__main__':
     print("Bot is active")
