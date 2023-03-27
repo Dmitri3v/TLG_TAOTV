@@ -12,7 +12,7 @@ bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
-photo_start = open("VM Kelium.jpg", "rb")
+photo_start = open("Dmitri3v/TLG_TAOTV/bot/VM Kelium.jpg", "rb")
 
 ## Start Edited
 
