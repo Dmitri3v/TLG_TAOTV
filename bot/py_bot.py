@@ -5,7 +5,7 @@ bot = telebot.TeleBot(tel_thonken)
 
 @bot.message_handler(commands=["start"])
 def cmd_start(message):
-    bot.reply_to(message, "Hi, im bot for Tao TV")
+    bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficiaL, ¡¡HASTA LA VICTORIA SIEMPRE!!")
 
 
 @bot.message_handler(content_types=["text"])
