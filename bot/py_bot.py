@@ -1,10 +1,25 @@
-from tel_config import *
+# from tel_config import *
 import telebot
 
+## Start Edited
+
+
+### End Edited
+
+
+tel_thonken = "5979217326:AAGd_2Cg21jPQBWXLZVw0J4MmFO8_BiUS00"
 bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
+
+
+## Start Edited
+
+
+
+### End Edited
+
 
 
     ### Este apartade es para definir los comandos principales
