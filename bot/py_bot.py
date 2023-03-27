@@ -11,6 +11,7 @@ rd_url = "https://mediacp15.rootservers.co:8068/stream"
 @bot.message_handler(commands=["start", "iniciar"])
 def cmd_start(message):
     bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
+    bot.send_audio(message, rd_url)
 
     ### En este apartado de define el comando "acerca" para que sea ejecutado
 @bot.message_handler(commands=["acerca"])
@@ -29,12 +30,6 @@ def bot_msg_txt(message):
         bot.send_message(message.chat.id, "Lo siento, pero ese comando no esta disponible, almenos no por el momento..")
     else:
         bot.send_message(message.chat.id, "Soy el bot de TAO TV!")
-
-
-@bot.message_handler(commands=["emisora"])
-def emisora_df(audio):
-    bot.send_audio(audio, audio=rd_url)
-
 
     ### Este es un bucle para que el bot no pare de correr
 if __name__ == '__main__':
