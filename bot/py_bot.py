@@ -7,7 +7,7 @@ import telebot
 ### End Edited
 
 
-tel_thonken = "5979217326:AAGd_2Cg21jPQBWXLZVw0J4MmFO8_BiUS00"
+tel_thonken = "5979217326:AAFgmiCJEXKgr44SwABNvhHpByn-2YFFE3Y"
 bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
