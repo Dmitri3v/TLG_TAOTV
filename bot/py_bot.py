@@ -3,6 +3,11 @@ import telebot
 
 bot = telebot.TeleBot(tel_thonken)
 
+rd_url = "https://mediacp15.rootservers.co:8068/stream"
+
+chat_id = bot.get_updates()[-1].message.chat_id
+
+
     ### Este apartade es para definir los comandos principales
 @bot.message_handler(commands=["start", "iniciar"])
 def cmd_start(message):
@@ -25,6 +30,13 @@ def bot_msg_txt(message):
         bot.send_message(message.chat.id, "Lo siento, pero ese comando no esta disponible, almenos no por el momento..")
     else:
         bot.send_message(message.chat.id, "Soy el bot de TAO TV!")
+
+@bot.message_handler(commands=["chatid"])
+def bot_chtid(message):
+    bot.reply_to(message, chat_id)
+
+while True:
+    bot.send_audio(c)
 
     ### Este es un bucle para que el bot no pare de correr
 if __name__ == '__main__':
