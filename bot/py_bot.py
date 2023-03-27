@@ -2,6 +2,7 @@ from tel_config import *
 import telebot
 
 bot = telebot.TeleBot(tel_thonken)
+bot.set_webhook()
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
 
