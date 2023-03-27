@@ -6,8 +6,6 @@ bot = telebot.TeleBot(tel_thonken)
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream"
 
-chat_id = bot.get_updates()[-1].message.chat_id
-print(chat_id)
 
     ### Este apartade es para definir los comandos principales
 @bot.message_handler(commands=["start", "iniciar"])
