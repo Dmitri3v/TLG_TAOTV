@@ -11,10 +11,10 @@ def cmd_start(message):
     ### En este apartado de define el comando "acerca" para que sea ejecutado
 @bot.message_handler(commands=["acerca"])
 def cmd_who(message):
-    bot.reply_to(message, "Actualmente me esta desarrollando Kepishdo, si lo quieres contactar escribe el comando /contact y te enviare su correo")
+    bot.reply_to(message, "Actualmente me esta desarrollando Kepishdo, si lo quieres contactar escribe el comando /contacto y te enviare su correo")
 
     ### En este apartado se define el comando contact
-@bot.message_handler(commands=["contact"])
+@bot.message_handler(commands=["contacto"])
 def cmd_contact(message):
     bot.reply_to(message, "Este es su correo: aleksander@duck.com , enviale saludos de mi parte!")
 
