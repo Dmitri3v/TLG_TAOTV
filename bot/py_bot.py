@@ -14,6 +14,7 @@ def cmd_who(message):
 @bot.message_handler(commands=["contact"])
 def cmd_contact(message):
     bot.reply_to(message, "Este es su correo ' aleksander@duck.com ', enviale saludes de mi parte!")
+    
 @bot.message_handler(content_types=["text"])
 def bot_msg_txt(message):
     if message.text.startswith("/"):
