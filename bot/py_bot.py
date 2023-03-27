@@ -32,8 +32,8 @@ def bot_msg_txt(message):
 
 
 @bot.message_handler(commands=["emisora"])
-def emisora_df(message):
-    bot.send_audio(message, audio=rd_url)
+def emisora_df(audio):
+    bot.send_audio(audio, audio=rd_url)
 
 
     ### Este es un bucle para que el bot no pare de correr
