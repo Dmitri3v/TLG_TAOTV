@@ -1,5 +1,6 @@
 from tel_config import *
 import telebot
+import telegram
 
 bot = telebot.TeleBot(tel_thonken)
 
