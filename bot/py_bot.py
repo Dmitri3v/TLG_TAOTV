@@ -27,3 +27,6 @@ if __name__ == '__main__':
     print("Bot is active")
     bot.infinity_polling()
     print("Bot disconnect")
+
+
+# Actualmente el bot esta en desarrollo, no esperen que sea la gran maravilla señores.
