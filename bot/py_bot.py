@@ -12,7 +12,7 @@ bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
-
+photo_start = "VM Kelium.jpg"
 
 ## Start Edited
 
@@ -26,7 +26,7 @@ rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
 @bot.message_handler(commands=["start", "iniciar"])
 def cmd_start(message):
     bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
-
+    bot.send_photo(message, )
     ### En este apartado de define el comando "acerca" para que sea ejecutado
 @bot.message_handler(commands=["acerca"])
 def cmd_who(message):
