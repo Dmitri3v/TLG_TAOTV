@@ -9,12 +9,12 @@ def cmd_start(message):
 
 @bot.message_handler(commands=["acerca"])
 def cmd_who(message):
-    bot.reply_to(message, "Actualmente me esta desarrollando Kepishdo, si lo quieres contactar escrie el comando '/contact' y te enviare su correo")
+    bot.reply_to(message, "Actualmente me esta desarrollando Kepishdo, si lo quieres contactar escribe el comando /contact y te enviare su correo")
 
 @bot.message_handler(commands=["contact"])
 def cmd_contact(message):
-    bot.reply_to(message, "Este es su correo ' aleksander@duck.com ', enviale saludes de mi parte!")
-    
+    bot.reply_to(message, "Este es su correo: aleksander@duck.com , enviale saludos de mi parte!")
+
 @bot.message_handler(content_types=["text"])
 def bot_msg_txt(message):
     if message.text.startswith("/"):
