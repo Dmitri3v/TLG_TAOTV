@@ -33,7 +33,7 @@ def bot_msg_txt(message):
 
 @bot.message_handler(commands=["chatid"])
 def bot_chtid(message):
-    bot.reply_to(message, chat_id)
+    bot.reply_to(message, "este es tu chatid =" chat_id)
 
 
     ### Este es un bucle para que el bot no pare de correr
