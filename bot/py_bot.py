@@ -35,8 +35,6 @@ def bot_msg_txt(message):
 def bot_chtid(message):
     bot.reply_to(message, chat_id)
 
-while True:
-    bot.send_audio(c)
 
     ### Este es un bucle para que el bot no pare de correr
 if __name__ == '__main__':
