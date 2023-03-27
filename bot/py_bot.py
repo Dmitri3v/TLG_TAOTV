@@ -31,9 +31,7 @@ def bot_msg_txt(message):
     else:
         bot.send_message(message.chat.id, "Soy el bot de TAO TV!")
 
-@bot.message_handler(commands=["chatid"])
-def bot_chtid(message):
-    bot.reply_to(message, "este es tu chatid =" chat_id)
+
 
 
     ### Este es un bucle para que el bot no pare de correr
