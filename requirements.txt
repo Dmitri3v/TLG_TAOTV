@@ -1,5 +1,2 @@
 telebot
-pytgcalls[pyrogram]
-pytgcalls[telethon]
-numpy
-av
+
