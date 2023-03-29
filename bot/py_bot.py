@@ -1,5 +1,6 @@
 # from tel_config import *
 import telebot
+import requests
 
 ## Start Edited
 
@@ -12,7 +13,7 @@ bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
-photo_start = "https://www.taoistas.org/wp-content/uploads/2021/01/100.jpg"
+photo_start = open("VMKelium.jpg", "rb")
 
 ## Start Edited
 
@@ -25,8 +26,9 @@ photo_start = "https://www.taoistas.org/wp-content/uploads/2021/01/100.jpg"
     ### Este apartade es para definir los comandos principales
 @bot.message_handler(commands=["start", "iniciar"])
 def cmd_start(message):
-    bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
-    bot.send_photo(message, photo=photo_start)
+    # bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
+    bot.send_photo(message, photo_start, "starts")
+
     ### En este apartado de define el comando "acerca" para que sea ejecutado
 @bot.message_handler(commands=["acerca"])
 def cmd_who(message):
