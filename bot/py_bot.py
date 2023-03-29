@@ -13,7 +13,7 @@ bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
 rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
-photo_start = open("VMKelium.jpg", "rb")
+photo = open("/temp/vmk.jpg", "rb")
 
 ## Start Edited
 
@@ -26,8 +26,21 @@ photo_start = open("VMKelium.jpg", "rb")
     ### Este apartade es para definir los comandos principales
 @bot.message_handler(commands=["start", "iniciar"])
 def cmd_start(message):
-    # bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
-    bot.send_photo(message, photo_start, "starts")
+    bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
+    bot.send_photo(message.chat.id, photo=photo )
+    file
+    photo.close()
+
+
+
+
+    ### Este apartado es para conseguir el ID
+    
+@bot.message_handler(commands=["chatid"])
+def cht_id(message):
+    chat_id = message.chat.id
+    bot.reply_to(message, f"Tu id es {chat_id}")
+
 
     ### En este apartado de define el comando "acerca" para que sea ejecutado
 @bot.message_handler(commands=["acerca"])
@@ -47,11 +60,13 @@ def bot_msg_txt(message):
     else:
         bot.send_message(message.chat.id, "Soy el bot de TAO TV!")
 
+
+
     ### Este es un bucle para que el bot no pare de correr
 if __name__ == '__main__':
-    print("Bot is active")
+    print("El Bot esta actualmente activo")
     bot.infinity_polling()
-    print("Bot disconnect")
+    print("Bot desconectado")
 
 
 # Actualmente el bot esta en desarrollo, no esperen que sea la gran maravilla señores.
