@@ -12,8 +12,7 @@ tel_thonken = "5979217326:AAFgmiCJEXKgr44SwABNvhHpByn-2YFFE3Y"
 bot = telebot.TeleBot(tel_thonken)
 bot.set_webhook()
 
-rd_url = "https://mediacp15.rootservers.co:8068/stream.mpeg"
-photo = open("/temp/vmk.jpg", "rb")
+
 
 ## Start Edited
 
@@ -26,14 +25,11 @@ photo = open("/temp/vmk.jpg", "rb")
     ### Este apartade es para definir los comandos principales
 @bot.message_handler(commands=["start", "iniciar"])
 def cmd_start(message):
-    bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial, ¡¡HASTA LA VICTORIA SIEMPRE!!")
-    bot.send_photo(message.chat.id, photo=photo )
-    file
-    photo.close()
+    bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial")
+    with open("/temp/vmk.jpg", "rb") as photo:
+        bot.send_photo(message.chat.id, photo=photo )
 
-
-
-
+        
     ### Este apartado es para conseguir el ID
     
 @bot.message_handler(commands=["chatid"])
