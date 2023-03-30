@@ -26,10 +26,10 @@ bot.set_webhook()
 @bot.message_handler(commands=["start", "iniciar"])
 def cmd_start(message):
     bot.reply_to(message, "Hola, soy el bot de TAOTV, actualmente me encuentro en desarrollo, por ello no tengo muchas funciones hasta el momento, sin embargo pronto sere completamente oficial")
-    with open("/temp/vmk.jpg", "rb") as photo:
+    with open("./temp/vmk.jpg", "rb") as photo:
         bot.send_photo(message.chat.id, photo=photo )
 
-        
+
     ### Este apartado es para conseguir el ID
     
 @bot.message_handler(commands=["chatid"])
